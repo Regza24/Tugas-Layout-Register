@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview1"
+        style="@style/textviewstyle"
+        android:text="@string/appname"
+    />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/e-mail"
+        style="@style/email"
+        app:met_floatingLabel="normal"
+        android:hint="E-mail Address"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_baseline_email_24"
+    />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/firstname"
+        style="@style/firstname"
+        app:met_floatingLabel="normal"
+        android:hint="First Name"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_baseline_person_outline_24"
+    />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/lastname"
+        style="@style/lastname"
+        app:met_floatingLabel="normal"
+        android:hint="Last Name"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_baseline_person_24"
+    />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        style="@style/password"
+        app:met_floatingLabel="normal"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_baseline_lock_24"
+    />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/confirmpass"
+        style="@style/confirmpass"
+        app:met_floatingLabel="normal"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/ic_baseline_lock_open_24"
+    />
+
+    <Button
+        android:id="@+id/register"
+        style="@style/buttonregister"
+        android:text="REGISTER"
+        android:enabled="true"
+        android:background="@drawable/bg_gradiant"
+    />
+
+    <Button
+        android:id="@+id/forgot"
+        style="@style/buttonforgot"
+        android:text="I FORGOT MY PASSWORD"
+        android:enabled="true"
+        android:background="@drawable/buttonstyle"
+    />
+</LinearLayout>
